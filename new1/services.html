@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../new1/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h1><span>s</span>paville</h1> 
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <img src="../flowers/img/love.png" alt="wishlist">
+        
+        <div class="cart-icon-container" style="position: relative; display: inline-block;">
+            <img src="../flowers/img/shopping-bag.png" alt="cart" id="cart-btn">
+            <span id="cart-count">0</span> 
+        </div>
+
+        <button type="button" id="login-btn">login</button>
+    </div>
+</header>
+
+    <section class="services" id="services">
+    <div class="heading">
+        <span>Our Premium Services</span>
+        <h2>Luxury Skin & Body Care Treatments</h2>
+    </div>
+
+    <div class="services-container">
+        
+        <div class="service-box">
+            <div class="ser-img">
+                <img src="../new1/img/877.jpg" alt="Deep Cleansing Facial">
+                <span class="price">$150</span>
+            </div>
+            <div class="ser-text">
+                <h3>Hydra-Glow Facial</h3>
+                <p>A deep cleansing treatment that removes impurities and infuses the skin with intensive hydration for an instant glow.</p>
+                <button class="btn-book" onclick="addToCart()">Book Appointment</button>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="ser-img">
+                <img src="../new1/img/987.jpg" alt="Organic Body Scrub">
+                <span class="price">$120</span>
+            </div>
+            <div class="ser-text">
+                <h3>Organic Coffee Scrub</h3>
+                <p>Exfoliate dead skin cells and boost circulation with our signature coffee scrub for silky smooth, rejuvenated skin.</p>
+                <button class="btn-book" onclick="addToCart()">Book Appointment</button>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <div class="ser-img">
+                <img src="../new1/img/5555.jpg" alt="Hot Stone Massage">
+                <span class="price">$180</span>
+            </div>
+            <div class="ser-text">
+                <h3>Hot Stone Therapy</h3>
+                <p>Relieve muscle tension and emotional stress with a warm, soothing massage using heated volcanic stones.</p>
+                <button class="btn-book" onclick="addToCart()">Book Appointment</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Welcome to <span>S</span>paville</h2>
+        <p>Please enter your details to login</p>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-submit">Login</button>
+        </form>
+        <div class="modal-footer">
+            <a href="#">Forgot Password?</a>
+            <p>New here? <a href="#">Create Account</a></p>
+        </div>
+    </div>
+</div>
+       <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="loge"><h1><span>s</span>paville</h1></div>
+            <p>نمنحك تجربة استرخاء فاخرة تعيد لجسدك وعقلك حيويتهما في أجواء هادئة ومريحة.</p>
+            <div class="social-icons">
+                <a href=""><img src="../flowers/img/user.png" alt="Facebook"></a>
+                <a href="#"><img src="../flowers/img/love.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>روابط سريعة</h3>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="mailto:lama409655222@gmail.com">اتصل بنا</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>تواصل معنا</h3>
+            <p>الرياض، المملكة العربية السعودية</p>
+            <p>الهاتف: +966 500 000 000</p>
+            <p>الايميل: info@spaville.com</p>
+        </div>
+    </div>
+
+    <div class="credit"> تم التطوير بواسطة <span>Spaville Team</span> | جميع الحقوق محفوظة © 2026 </div>
+</footer>
+</body>
+</html>
